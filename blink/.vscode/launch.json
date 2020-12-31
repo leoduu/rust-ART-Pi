@@ -1,0 +1,22 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "blink",
+            "type": "cortex-debug",
+            "request": "launch",
+            "preLaunchTask": "Cargo Build (debug)",
+            "runToMain": true,
+            "executable": "/home/leodu/project/rust-ART-Pi/blink/target/thumbv7em-none-eabihf/debug/blink",
+            "cwd": "/home/leodu/project/rust-ART-Pi/blink/src/",
+            "device": "STM32H750XBH6",
+            "configFiles": [
+                "interface/stlink-v2-1.cfg",
+                "target/stm32h7x.cfg"
+            ],
+        }
+    ]
+}
